@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f0f0f5;
+    color: #676767;
+    /* font-family: "Roboto", monospace; */
+    -webkit-font-smoothing: antialiased;
+}
+
+
+body,
+input,
+button {
+    font-size: 1rem;
+    /* font-family: "Roboto Mono", monospace; */
+}
+
+button {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    text-align: left;
+    padding: 10px;
+}
+
+.logo {
+    /* width: 10%; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 0 0 30px;
+    /* padding: 40px; */
+    /* font-size: 4rem; */
+    /* border: 1px solid #757598; */
+
+    font-family: "Roboto", monospace;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
+/* navbar styles start */
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid #f12c00; */
+    position: sticky;
+}
+
+.navbar-container ul {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid #b900f1; */
+}
+
+.navbar-container ul li {
+    font-family: "Roboto", monospace;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    padding-right: 1.8rem;
+    margin-right: 1rem;
+    color: #ffffff;
+}
+
+.navbar-container ul li a {
+    text-decoration: none;
+}
+
+.header__categories {
+    display: flex;
+    justify-content: space-between;
+
+    /* border: 1px solid #af4ef5; */
+}
+
+.header__categories li {
+
+    color: #f0f0f5;
+    font-family: "Roboto", monospace;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    padding-right: 1.8rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    vertical-align: text-top;
+    text-align: center;
+    border-right: 1px white solid;
+
+
+
+    /* border: 1px solid #6fe888; */
+
+
+}
+
+/* navbar styles end */
+
+
+
+/* set header image */
+.header {
+    background-image: url(/site_mountain-biking/images/Ibis-Ripmo-3-Action-Outdoor-15.jpg);
+    /* background-image: url(/site_mountain-biking/images/landing-page_hero-img.jpg); */
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 90vh;
+    backdrop-filter: blur(15px);
+
+}
+
+.header__content-wrapper {
+    /* border: 1px solid #6fe888; */
+
+    position: absolute;
+    width: 50%;
+    margin: 0;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    /* text-align: left; */
+}
+
+
+h1 {
+    font-family: "Poppins", monospace;
+    font-size: 10rem;
+    font-weight: 900;
+    color: #f0f0f5;
+
+    /* padding-bottom: 0; */
+}
+
+p {
+    font-family: "Roboto", monospace;
+    font-size: 2.5rem;
+    color: #f0f0f5;
+}
