@@ -1,169 +1,260 @@
-* {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
-}
+ :root {
+     --neutral-100: hsl(0, 0%, 100%);
 
-body {
-    background: #f0f0f5;
-    color: #676767;
-    /* font-family: "Roboto", monospace; */
-    -webkit-font-smoothing: antialiased;
-}
+     --accent-400: hsl(93, 60%, 69%);
+
+     --text-1: var(--neutral-100);
+     --text-2: var(--primary-100);
+     --text-3: var(--primary-200);
+ }
 
 
-body,
-input,
-button {
-    font-size: 1rem;
-    /* font-family: "Roboto Mono", monospace; */
-}
+ * {
+     margin: 0;
+     padding: 0;
+     outline: 0;
+     box-sizing: border-box;
+ }
 
-button {
-    cursor: pointer;
-}
-
-ul {
-    list-style: none;
-    text-align: left;
-    padding: 10px;
-}
-
-.logo {
-    /* width: 10%; */
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding: 0 0 0 30px;
-    /* padding: 40px; */
-    /* font-size: 4rem; */
-    /* border: 1px solid #757598; */
-
-    font-family: "Roboto", monospace;
-    font-size: 1.5rem;
-    font-weight: 600;
-}
+ body {
+     background: #f0f0f5;
+     color: #676767;
+     /* font-family: "Roboto", monospace; */
+     -webkit-font-smoothing: antialiased;
+ }
 
 
-/* navbar styles start */
+ body,
+ input,
+ button {
+     font-size: 1rem;
+     /* font-family: "Roboto Mono", monospace; */
+ }
 
-.navbar-container {
-    display: flex;
-    justify-content: space-between;
-    /* border: 1px solid #f12c00; */
-    position: sticky;
-}
+ button {
+     cursor: pointer;
+ }
 
-.navbar-container ul {
-    width: 50%;
-    display: flex;
-    justify-content: end;
-    justify-content: space-around;
-    align-items: center;
-    /* border: 1px solid #b900f1; */
-}
+ a {
+     text-decoration: none;
+     color: #000;
 
-.navbar-container ul li {
-    font-family: "Roboto", monospace;
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-decoration: none;
-    text-transform: uppercase;
-    position: relative;
-    padding-right: 1.8rem;
-    margin-right: 1rem;
-    color: #ffffff;
-}
+ }
 
-.navbar-container ul li a {
-    text-decoration: none;
-}
+ ul {
+     list-style: none;
+     text-align: left;
+     padding: 10px;
+ }
 
-.header__categories {
-    display: flex;
-    justify-content: space-between;
+ .logo {
+     /* width: 10%; */
+     display: flex;
+     justify-content: start;
+     align-items: center;
+     padding: 0 0 0 30px;
+     /* border: 1px solid #757598; */
 
-    /* border: 1px solid #af4ef5; */
-}
-
-.header__categories li {
-
-    color: #f0f0f5;
-    font-family: "Roboto", monospace;
-    font-size: 1.5rem;
-    font-weight: 900;
-    text-decoration: none;
-    text-transform: uppercase;
-    position: relative;
-    padding-right: 1.8rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    display: inline-block;
-    vertical-align: text-top;
-    text-align: center;
-    border-right: 1px white solid;
+     font-family: "Roboto", monospace;
+     font-size: 1.5rem;
+     font-weight: 600;
+ }
 
 
+ /* navbar styles start */
 
-    /* border: 1px solid #6fe888; */
+ .navbar-container {
+     display: flex;
+     justify-content: space-between;
+     /* border: 1px solid #f12c00; */
+     /* position: fixed; */
+ }
+
+ .navbar-container ul {
+     width: 50%;
+     display: flex;
+     justify-content: end;
+     justify-content: space-around;
+     align-items: center;
+     /* border: 1px solid #b900f1; */
+ }
+
+ .navbar-container ul li {
+     font-family: "Roboto", monospace;
+     font-size: 1.5rem;
+     font-weight: 600;
+     text-decoration: none;
+     text-transform: uppercase;
+     position: relative;
+     padding-right: 1.8rem;
+     margin-right: 1rem;
+     color: var(--accent-400);
+ }
+
+ .navbar-container ul li a {
+     text-decoration: none;
+ }
+
+ .icons {
+     padding-right: 2.5px;
+ }
+
+ /* navbar styles end */
 
 
-}
+ .header__categories {
+     display: flex;
+     justify-content: space-between;
 
-/* navbar styles end */
+     /* border: 1px solid #af4ef5; */
+ }
 
+ .header__categories li {
 
+     color: #f0f0f5;
+     font-family: "Roboto", monospace;
+     font-size: 1.5rem;
+     font-weight: 900;
+     text-decoration: none;
+     text-transform: uppercase;
 
-/* set header image */
-.header {
-    background-image: url(/images/Ibis-Ripmo-3-Action-Outdoor-15.jpg);
-    /* background-image: url(/site_mountain-biking/images/landing-page_hero-img.jpg); */
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-    height: 90vh;
-    backdrop-filter: blur(15px);
+     position: relative;
+     padding-right: 1.8rem;
+     margin-right: 1rem;
+     margin-bottom: 1rem;
+     display: inline-block;
+     vertical-align: text-top;
+     text-align: center;
+     border-right: 1px white solid;
 
-}
-
-.header__content-wrapper {
-    /* border: 1px solid #6fe888; */
-
-    position: absolute;
-    width: 50%;
-    margin: 0;
-    top: 50%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    /* text-align: left; */
-}
+     /* border: 1px solid #6fe888; */
+ }
 
 
-h1 {
-    font-family: "Poppins", monospace;
-    font-size: 10rem;
-    font-weight: 900;
-    color: #f0f0f5;
 
-    /* padding-bottom: 0; */
-}
 
-p {
-    font-family: "Roboto", monospace;
-    font-size: 2.5rem;
-    color: #f0f0f5;
-}
+ /* set header image */
+ .header {
+     background-image: url(/images/Ibis-Ripmo-3-Action-Outdoor-15.jpg);
+     /* background-image: url(/site_mountain-biking/images/landing-page_hero-img.jpg); */
+     background-size: cover;
+     background-position: center;
+     width: 100vw;
+     height: 90vh;
+     backdrop-filter: blur(15px);
 
-/* content body styles start */
+ }
 
-.content__body {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #000;
-    border: 1px solid #6f4d4d;
-}
-/* content body styles end */
+ .header__content-wrapper {
+     /* border: 1px solid #6fe888; */
+
+     position: absolute;
+     width: 50%;
+     margin: 0;
+     top: 50%;
+     left: 30%;
+     transform: translate(-50%, -50%);
+     /* text-align: left; */
+ }
+
+ header__title-wrapper,
+ p {
+     font-family: "Poppins", monospace;
+     font-size: 2.5rem;
+     font-weight: 700;
+
+     margin-bottom: 50px;
+
+
+ }
+
+ button {
+     padding: 10px 20px;
+     border: none;
+     border-radius: 20px;
+ }
+
+
+ h1 {
+     font-family: "Poppins", monospace;
+     font-size: 10rem;
+     font-weight: 900;
+     color: #f0f0f5;
+     text-transform: uppercase;
+
+     line-height: 0.8;
+
+     z-index: 1;
+     /* display: block; */
+
+     /* padding-bottom: 0; */
+ }
+
+ h3 {
+     font-family: "Poppins", monospace;
+     font-size: 2rem;
+     font-weight: 900;
+     color: #f0f0f5;
+ }
+
+ p {
+     font-family: "Roboto", monospace;
+     font-size: 2.5rem;
+     color: #f0f0f5;
+ }
+
+
+
+ /* content body styles start */
+
+ .content__top-wrapper {
+     width: 100vw;
+     height: 100vh;
+     display: flex;
+     justify-content: space-between;
+     background: #2a2b2f;
+     flex-direction: row;
+     padding-top: 20px;
+     /* border: 1px solid #6f4d4d; */
+ }
+
+ .content__left {
+     display: flex;
+     flex-direction: column;
+     width: 46%;
+
+     /* border: 1px solid #fb2ebd; */
+ }
+
+ .content__left h3 {
+     font-family: "Poppins", monospace;
+     font-size: 2.5rem;
+     font-weight: 900;
+     color: #4545d0;
+     padding-bottom: 10px;
+ }
+
+ .content__left p {
+     font-family: "Roboto", monospace;
+     font-size: 2rem;
+     color: #c5c5cc;
+
+     padding-right: 10px;
+
+ }
+
+
+ /* content body styles end */
+
+ footer {
+     width: 100vw;
+     height: 50vh;
+     background: #000;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+
+     border: 1px solid #efffff;
+
+ }
