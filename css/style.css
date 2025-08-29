@@ -89,6 +89,13 @@
      padding-right: 1.8rem;
      margin-right: 1rem;
      color: var(--accent-400);
+
+
+     background: rgba(255, 255, 255, 0.2);
+     backdrop-filter: blur(10px);
+     border-radius: 15px;
+     border: 1px solid rgba(255, 255, 255, 0.3);
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
  }
 
  .navbar-container ul li a {
@@ -113,7 +120,7 @@
 
      color: #f0f0f5;
      font-family: "Roboto", monospace;
-     font-size: 1.5rem;
+     font-size: 1.25rem;
      font-weight: 900;
      text-decoration: none;
      text-transform: uppercase;
@@ -125,7 +132,7 @@
      display: inline-block;
      vertical-align: text-top;
      text-align: center;
-     border-right: 1px white solid;
+     border-right: 2px var(--accent-400) solid;
 
      /* border: 1px solid #6fe888; */
  }
@@ -162,6 +169,8 @@
      font-family: "Poppins", monospace;
      font-size: 2.5rem;
      font-weight: 700;
+
+     color: var(--accent-400);
 
      margin-bottom: 50px;
 
@@ -222,22 +231,39 @@
      display: flex;
      flex-direction: column;
      width: 46%;
+     height: 55%;
+     padding: 20px;
+
+     /* background: rgba(255, 255, 255, 0.2);
+     backdrop-filter: blur(10px);
+     border-radius: 15px;
+     border: 1px solid rgba(255, 255, 255, 0.3);
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
 
      /* border: 1px solid #fb2ebd; */
+ }
+
+ img {
+     /* width: 100%; */
+     /* height: 100%; */
+     object-fit: cover;
+     border-radius: 15px;
+     margin-left: 20px;
+
  }
 
  .content__left h3 {
      font-family: "Poppins", monospace;
      font-size: 2.5rem;
      font-weight: 900;
-     color: #4545d0;
+     color: var(--accent-400);
      padding-bottom: 10px;
  }
 
  .content__left p {
      font-family: "Roboto", monospace;
      font-size: 2rem;
-     color: #c5c5cc;
+     color: var(--text-1);
 
      padding-right: 10px;
 
