@@ -117,7 +117,7 @@ ul {
 
 /* set header image */
 .header {
-    background-image: url(/site_mountain-biking/images/Ibis-Ripmo-3-Action-Outdoor-15.jpg);
+    background-image: url(/images/Ibis-Ripmo-3-Action-Outdoor-15.jpg);
     /* background-image: url(/site_mountain-biking/images/landing-page_hero-img.jpg); */
     background-size: cover;
     background-position: center;
@@ -154,3 +154,16 @@ p {
     font-size: 2.5rem;
     color: #f0f0f5;
 }
+
+/* content body styles start */
+
+.content__body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    border: 1px solid #6f4d4d;
+}
+/* content body styles end */
